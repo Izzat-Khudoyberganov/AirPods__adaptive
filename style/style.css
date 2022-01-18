@@ -1,0 +1,261 @@
+@import url(./fonts.css);
+
+:root{
+  --MR:Montserrat__Regular;
+  --MB:Montserrat__Bold;
+  --PR:Prosto__One;
+  --bgcolor:#151515;
+}
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--bgcolor);
+}
+.container{
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header__content__item{
+  display: flex;
+}
+.header__content{
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo__img{
+  width: 100px;
+}
+.nav,
+.footer__nav{
+  display: flex;
+  align-items: center;
+}
+.footer__nav{
+  gap: 10px;
+}
+.nav__link{
+  font-family: var(--MB);
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 30px;
+}
+.form__control{
+  margin-left: auto;
+}
+.form__control a span::before{
+  font-size: 20px;
+  line-height: 20px;color: #fff;
+}
+.search__icon{
+  margin-right: 25px;
+}
+/* Header info start  */
+.header__info{
+  background-image: url(../img/Header\ \(1\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  height: 625px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+}
+.info__title{
+  font-family: var(--PR);
+  font-size: 100px;
+  line-height: 75px;
+  color: #fff;
+  max-width: 663px;
+  width: 100%;
+}
+.info__link{
+  padding: 13px 14px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: var(--MR);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  color: #171718;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.info__link span::before{
+  margin-left: 11px;
+  font-size: 15px;
+}
+/* Header info end */
+
+
+/* Main section start  */
+.main__content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.main__content__item:not(:last-child){
+  margin-right: 30px;
+}
+.main__text{
+  font-family: var(--MR);
+  font-size: 22px;
+  line-height: 27px;
+  color: #fff;
+  max-width: 540px;
+  width: 100%;
+  margin-top: 30px;
+}
+.main__img{
+  max-width: 552px;
+  width: 100%;
+}
+.first{
+  margin-top: 33px;
+}
+.center{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.reverse{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* About section start  */
+.about{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.about__text{
+  max-width: 333px;
+  width: 100%;
+  font-family: var(--MB);
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+.right{
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
+.about__img{
+  position: relative;
+  margin: 0 88px;
+}
+.about__img::before{
+  content: "";
+  width: 61px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+}
+.about__img::after{
+  content: "";
+  width: 61px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+}
+/* About section end */
+
+
+/* Cards section start  */
+
+
+/* Cards section end */
+.cards{
+  margin: 30px 0 55px 0;
+}
+.cards__content{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.card__group{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 30px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 0;
+  width: 255px;
+  border-radius: 6px;
+}
+.card__title{
+  font-family: var(--MB);
+  font-size: 20px;
+  line-height: 24px;
+}
+.card__img{
+  margin: 10px 0;
+}
+.card__price{
+  font-family: var(--MR);
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.card__link{
+  padding: 7px 57px;
+  background-color: var(--bgcolor);
+  color: #fff;
+  font-family: var(--MB);
+  font-size: 16px;
+  line-height: 120%;
+}
+/* Main section end */
+
+/* Footer start  */
+.footer{
+  background-color: #282828;
+  padding: 80px 0;
+  margin-top: 30px;
+}
+.footer__content{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.transactions a span::before{
+  font-size: 55px;
+  color: #fff;
+}
+.visa{
+  margin-right: 30px;
+}
+/* Footer end */
